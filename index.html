@@ -6,16 +6,24 @@
     </head>
 
     <body>
-        <navbar>
-            <div class="container">
-                <img src="resources/images/logo.png" />
-                <div class="navbar-items">
-                    <a href="/index.html">Home</a>
-                    <a href="/employees.html">Employees</a>
-                    <a href="/jobs.html">Jobs</a>
-                    <a href="/courses.html">Courses</a>
-                </div>
-            </div>
-        </navbar>
+        <div include="resources/templates/navbar.html"></div>
+
+        <script>
+            let elements = document.querySelectorAll("*[include]");
+            elements.forEach((element) => {
+                file = element.getAttribute("include");
+                if (file) {
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4) {
+                            if (this.status === 200) { element.innerHTML = this.responseText; }
+                            else if (this.status === 404) { element.innerHTML = "Something broke."; }
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                }
+            });
+        </script>
     </body>
 </html>
