@@ -18,9 +18,34 @@ body {
     background-color: var(--grey);
 }
 
+button, .btn {
+    cursor: pointer;
+    padding: 0.5rem;
+
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+
+    background-color: var(--yellow);
+    border: none;
+    outline: none;
+
+    transition: var(--default-transition);
+}
+
+button:hover, .btn:hover {
+    filter: brightness(90%);
+}
+
 .container {
     width: 60%;
     margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    padding: 0;
 }
 
 navbar {
