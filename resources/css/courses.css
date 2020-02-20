@@ -1,22 +1,32 @@
 .courses {
     display: grid;
     grid-template-columns: 50% 50%;
-    column-gap: 1rem;
     justify-items: center;
 }
 
 .course {
-    margin: 2rem;
+    margin: 1rem;
     padding: 1rem;
     width: 90%;
 
+    display: grid;
+    grid-template-rows: 20% auto;
+
     background-color: var(--grey-light);
     border-bottom: 8px solid var(--yellow);
+
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 .course h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+}
+
+.course .content-wrapper {
+    display: grid;
+    grid-template-rows: auto auto;
+    align-items: flex-end;
 }
 
 .course .content {
@@ -27,6 +37,15 @@
 
     justify-items: center;
     align-items: center;
+}
+
+.course .content img {
+    width: 80%;
+}
+
+.course .content .covers {
+    font-weight: bolder;
+    font-size: 1.25rem;
 }
 
 .course .view-more {
