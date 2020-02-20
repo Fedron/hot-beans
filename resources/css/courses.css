@@ -10,7 +10,7 @@
     width: 90%;
 
     display: grid;
-    grid-template-rows: 20% auto;
+    grid-template-rows: auto auto;
 
     background-color: var(--grey-light);
     border-bottom: 8px solid var(--yellow);
@@ -19,6 +19,7 @@
 }
 
 .course h1 {
+    overflow: hidden;
     font-size: 3rem;
     margin-bottom: 1rem;
 }
@@ -43,6 +44,11 @@
     width: 80%;
 }
 
+.course .content p {
+    word-wrap: break-word;
+    width: 90%;
+}
+
 .course .content .covers {
     font-weight: bolder;
     font-size: 1.25rem;
@@ -57,4 +63,11 @@
 
 .course .view-more .btn {
     width: 100%;
+}
+
+@media (max-width: 1400px) {
+    .courses {
+        grid-template-columns: 80%;
+        justify-content: center;
+    }
 }
