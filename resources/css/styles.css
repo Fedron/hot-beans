@@ -10,6 +10,7 @@
     --grey: #3F3F54;
     --grey-dark: #2A2A38;
     --yellow: #FFD168;
+    --brown: #B07777;
 
     --default-transition: all 200ms ease-in-out;
 }
@@ -20,6 +21,7 @@ body {
 
 button, .btn {
     cursor: pointer;
+    user-select: none;
     padding: 0.5rem;
 
     text-transform: uppercase;
@@ -42,6 +44,7 @@ button:hover, .btn:hover {
     overflow: hidden;
     width: 60%;
     margin: 0 auto;
+    padding-top: 2rem;
 }
 
 .hidden {

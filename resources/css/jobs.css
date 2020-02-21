@@ -1,0 +1,61 @@
+.job-list {
+    display: grid;
+    grid-auto-rows: auto;
+    row-gap: 2rem;
+}
+
+.job {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    column-gap: 1.5rem;
+}
+
+.job .name {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+
+    background: var(--yellow);
+    transition: var(--default-transition);
+}
+
+.job .name:hover {
+    filter: brightness(105%);
+}
+
+.job .desc {
+    padding: 1rem 2rem;
+    padding-right: 3rem;
+
+    background-color: var(--grey-light);
+}
+
+.job .desc .headers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.job .desc .main-info {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+}
+
+.job .desc .info {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.job .desc .expand {
+    width: 10%;
+    float: right;
+
+    font-size: 1.25rem;
+    background-color: transparent;
+    border: 5px solid var(--yellow);
+    border-radius: 8px;
+}

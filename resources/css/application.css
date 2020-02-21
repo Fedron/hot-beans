@@ -1,0 +1,22 @@
+#job {
+    padding-bottom: 1rem;
+    border-bottom: 8px solid var(--yellow);
+}
+
+#job .title {
+    font-size: 5rem;
+    font-weight: bolder;
+    color: var(--brown);
+}
+
+#job .headers {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+#job .headers .main-info {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2.5rem;
+}
