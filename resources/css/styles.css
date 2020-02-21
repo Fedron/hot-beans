@@ -167,6 +167,21 @@ navbar .sec .hamburger:hover {
     }
 
     navbar .navbar-items {
-        justify-content: center;
+        overflow: hidden;
+        display: inline-block;
+        width: 95%;
+        height: auto;
+        text-align: right;
+    }
+
+    navbar .navbar-items .item {
+        overflow: hidden;
+        width: 100%;
+        height: 4rem;
+    }
+
+    navbar .navbar-items a:hover {
+        color: #ffe099;
+        transform: scale(1.05);
     }
 }

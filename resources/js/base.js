@@ -18,7 +18,6 @@ elements.forEach((element) => {
 setTimeout(() => {
     // Hamburger functionality
     const hamburger = document.querySelector(".hamburger");
-    console.log(hamburger)
     const secondaryNav = document.querySelector(".sec .navbar-items");
     hamburger.addEventListener("click", () => {
         if (secondaryNav.classList.contains("hidden")) { secondaryNav.classList.remove("hidden") }
