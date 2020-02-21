@@ -67,7 +67,7 @@
 
 @media (max-width: 1400px) {
     .courses {
-        grid-template-columns: 80%;
+        grid-template-columns: 90%;
         justify-content: center;
     }
 }

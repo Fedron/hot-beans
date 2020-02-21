@@ -39,8 +39,13 @@ button:hover, .btn:hover {
 }
 
 .container {
+    overflow: hidden;
     width: 60%;
     margin: 0 auto;
+}
+
+.hidden {
+    display: none!important;
 }
 
 a {
@@ -55,7 +60,7 @@ navbar {
     border-bottom: 15px solid var(--yellow);
 }
 
-navbar .container {
+navbar .container, navbar .container .header {
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -114,6 +119,24 @@ navbar .navbar-items a:hover::after {
     left: 0;
 }
 
+navbar .sec {
+    display: none;
+}
+
+navbar .sec .hamburger {
+    cursor: pointer;
+    margin-right: 3.5rem;
+
+    color: var(--yellow);
+    font-size: 5rem;
+    transition: var(--default-transition);
+}
+
+navbar .sec .hamburger:hover {
+    filter: brightness(90%);
+    transform: scale(1.2);
+}
+
 @media (max-width: 1920px) {
     .container {
         width: 80%;
@@ -122,6 +145,28 @@ navbar .navbar-items a:hover::after {
 
 @media (max-width: 1400px) {
     .container {
-        width: 100%;
+        width: 100vw;
+    }
+
+    navbar .navbar-items {
+        margin-right: 1.5rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    navbar .main {
+        display: none;
+    }
+
+    navbar .sec {
+        display: block;
+    }
+
+    navbar .container {
+        display: block;
+    }
+
+    navbar .navbar-items {
+        justify-content: center;
     }
 }

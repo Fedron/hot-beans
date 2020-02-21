@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Hot Beans - Courses</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
         <link rel="stylesheet" href="resources/css/styles.css" />
         <link rel="stylesheet" href="resources/css/courses.css" />
     </head>
@@ -95,22 +96,6 @@
             </div>
         </div>
 
-        <script>
-            let elements = document.querySelectorAll("*[include]");
-            elements.forEach((element) => {
-                file = element.getAttribute("include");
-                if (file) {
-                    xhttp = new XMLHttpRequest();
-                    xhttp.onreadystatechange = function() {
-                        if (this.readyState === 4) {
-                            if (this.status === 200) { element.innerHTML = this.responseText; }
-                            else if (this.status === 404) { element.innerHTML = "Something broke."; }
-                        }
-                    }
-                    xhttp.open("GET", file, true);
-                    xhttp.send();
-                }
-            });
-        </script>
+        <script src="resources/js/base.js"></script>
     </body>
 </html>
