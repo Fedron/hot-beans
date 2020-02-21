@@ -5,7 +5,7 @@ document.querySelector("#job").innerHTML = `
 </div>
 <div class="headers">
     <div class="main-info">
-        <h1>${urlParams.get("salary")}</h1>
+        <h1><i class="fas fa-coins"></i> ${urlParams.get("salary")}</h1>
         <h1><i class="fas fa-clock"></i> ${urlParams.get("time")}</h1>
         <h1><i class="fas fa-city"></i> ${urlParams.get("city")}</h1>
     </div>

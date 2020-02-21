@@ -45,6 +45,7 @@ button:hover, .btn:hover {
     width: 60%;
     margin: 0 auto;
     padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .hidden {

@@ -7,17 +7,17 @@
 .job {
     overflow: hidden;
     display: grid;
-    grid-template-columns: 10% 90%;
+    grid-template-columns: 15% 85%;
     column-gap: 1.5rem;
 }
 
 .job .name {
-    cursor: pointer;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 0.5rem;
+    text-align: center;
+    padding: 0.25rem;
 
+    font-size: 120%;
     background: var(--yellow);
     transition: var(--default-transition);
 }
@@ -48,6 +48,10 @@
 .job .desc .info {
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+.job .desc li {
+    margin-left: 2rem;
 }
 
 .job .desc .expand {
