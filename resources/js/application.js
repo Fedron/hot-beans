@@ -27,3 +27,17 @@ viewInfoBtn.addEventListener("click", () => {
         viewInfoBtn.innerHTML = "View Info";
     }
 });
+
+document.querySelector("form").addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const alert = document.querySelector("#alert");
+    alert.style.backgroundColor = "#eb4034"
+    alert.querySelector("p").innerHTML = "Error";
+
+    alert.classList.remove("hidden");
+});
+
+document.querySelector("#alert i").addEventListener("click", () => {
+    document.querySelector("#alert").classList.add("hidden");
+});

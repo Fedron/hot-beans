@@ -10,8 +10,54 @@
     <body>
         <div include="resources/templates/navbar.html"></div>
 
+        <div id="alert" class="hidden">
+            <p>Message</p>
+            <i class="fas fa-times"></i>
+        </div>
         <div class="container">
             <div id="job"></div>
+            <form>
+                <div class="cv-upload">
+                    <label>CV Upload</label>
+                    <input name="cv" type="file" />
+                </div>
+                <div class="fields">
+                    <div class="field">
+                        <label>Field: </label> <input /> <p>* Required</p>
+                    </div>
+                    <div class="field">
+                        <label>Field: </label> <input />
+                    </div>
+                    <div class="field">
+                        <label>Field: </label> <input />
+                    </div>
+                    <div class="field">
+                        <label>Field: </label> <input />
+                    </div>
+                    <div class="field">
+                        <label>Field: </label> <input />
+                    </div>
+                    <div class="field">
+                        <label>Field: </label> <input />
+                    </div>
+                    <div class="field">
+                        <label>Field: </label> <input />
+                    </div>
+                </div>
+                <p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit, urna et varius mattis, nibh ante commodo lacus, eget vulputate ligula enim ut nibh. Integer id justo pellentesque, luctus arcu vitae, euismod lectus. Nullam vel congue lorem. Nullam porta sit amet eros non aliquet. Cras vitae finibus ipsum, pulvinar gravida purus. Phasellus at lacinia justo. Donec pulvinar malesuada enim, non elementum tortor pellentesque et. Donec ut turpis nisi. Morbi nunc libero, gravida quis erat at, porttitor aliquam sem. Nam congue, lorem quis posuere imperdiet, velit nibh consectetur massa, at interdum lectus velit porta quam. Vestibulum sed pellentesque nunc.</p>
+                <div class="fields">
+                    <div class="field">
+                        <label>Field: </label> <input />
+                    </div>
+                </div>
+                <p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit, urna et varius mattis, nibh ante commodo lacus, eget vulputate ligula enim ut nibh.</p>
+                <div class="fields">
+                    <div class="field field-lg">
+                        <label>Field: </label> <textarea></textarea>
+                    </div>
+                </div>
+                <button type="submit">Submit Application</button>
+            </form>
         </div>
 
         <script src="resources/js/base.js"></script>
