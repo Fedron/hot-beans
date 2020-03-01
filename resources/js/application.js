@@ -30,10 +30,23 @@ viewInfoBtn.addEventListener("click", () => {
 
 document.querySelector("form").addEventListener("submit", (e) => {
     e.preventDefault();
+    const requiredFields = document.querySelectorAll(".req");
+    const missingFields = [];
+    requiredFields.forEach((element) => {
+        const inputField = element.querySelector("input");
+        if (!inputField.value) {
+            missingFields.push(inputField.name);
+        }
+    });
 
     const alert = document.querySelector("#alert");
-    alert.style.backgroundColor = "#eb4034"
-    alert.querySelector("p").innerHTML = "Error";
+    if (missingFields.length > 0) {
+        alert.style.backgroundColor = "#eb4034"
+        alert.querySelector("p").innerHTML = `Required fields missing: ${missingFields}`;
+    } else {
+        alert.style.backgroundColor = "#67db6f";
+        alert.querySelector("p").innerHTML = "Application submitted successfully";
+    }
 
     alert.classList.remove("hidden");
 });
