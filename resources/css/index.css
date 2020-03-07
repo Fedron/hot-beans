@@ -22,6 +22,7 @@ body > .container {
     font-weight: lighter;
     font-size: 3rem;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .main-info {
@@ -100,4 +101,13 @@ body > .container {
     0% { transform: scale(1) rotate(0); }
     50% { transform: scale(1.05) rotate(-3deg); }
     100% { transform: scale(1) rotate(0); }
+}
+
+@media (max-width: 1400px) {
+    .main-info {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        row-gap: 1rem;
+    }
 }
