@@ -20,7 +20,14 @@ setTimeout(() => {
     const hamburger = document.querySelector(".hamburger");
     const secondaryNav = document.querySelector(".sec .navbar-items");
     hamburger.addEventListener("click", () => {
-        if (secondaryNav.classList.contains("hidden")) { secondaryNav.classList.remove("hidden") }
-        else { secondaryNav.classList.add("hidden") }
+        if (secondaryNav.classList.contains("hidden")) {
+            secondaryNav.classList.remove("hidden");
+            hamburger.classList.remove("fa-bars");
+            hamburger.classList.add("fa-times");
+        } else {
+            secondaryNav.classList.add("hidden");
+            hamburger.classList.add("fa-bars");
+            hamburger.classList.remove("fa-times");
+        }
     });
 }, 200);

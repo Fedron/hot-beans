@@ -8,7 +8,7 @@
 
     --grey-light: #63637F;
     --grey: #3F3F54;
-    --grey-dark: #2A2A38;
+    --grey-dark: rgb(50, 50, 66);
     --yellow: #FFD168;
     --brown: #B07777;
 
@@ -141,6 +141,21 @@ navbar .sec .hamburger:hover {
     transform: scale(1.2);
 }
 
+.sec-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 1rem;
+    margin-top: 2rem;
+}
+
+.sec-info .title {
+    color: var(--brown);
+    font-weight: lighter;
+    font-size: 4rem;
+}
+
 @media (max-width: 1920px) {
     .container {
         width: 80%;
@@ -149,11 +164,20 @@ navbar .sec .hamburger:hover {
 
 @media (max-width: 1400px) {
     .container {
-        width: 100vw;
+        width: 100%;
     }
 
     navbar .navbar-items {
         margin-right: 1.5rem;
+    }
+
+    .sec-info {
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    .sec-info p {
+        margin-bottom: 1rem;
     }
 }
 
