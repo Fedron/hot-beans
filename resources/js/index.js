@@ -1,4 +1,5 @@
 const slideshowItems = document.querySelectorAll(".slideshow-item");
+const slideshowCount = document.querySelector(".slideshow-count");
 let currentMaxIndex = 3;
 
 const updateSlideshow = () => {
@@ -9,6 +10,8 @@ const updateSlideshow = () => {
     for (let i = currentMaxIndex - 3; i <= currentMaxIndex; i++) {
         slideshowItems[i].classList.remove("hidden");
     }
+
+    slideshowCount.innerHTML = `${currentMaxIndex + 1} / ${slideshowItems.length}`
 }
 
 document.querySelector(".slideshow-left").addEventListener("click", () => {
@@ -24,3 +27,5 @@ document.querySelector(".slideshow-right").addEventListener("click", () => {
     currentMaxIndex++;
     updateSlideshow();
 });
+
+updateSlideshow();
