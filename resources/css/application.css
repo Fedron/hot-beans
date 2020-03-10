@@ -43,6 +43,10 @@
     column-gap: 2.5rem;
 }
 
+#job li {
+    margin-left: 2rem;
+}
+
 .fields {
     display: grid;
     grid-template-columns: 50% 50%;
