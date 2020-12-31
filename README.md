@@ -1,6 +1,5 @@
 # Hot Beans
-https://fedron.github.io/hot-beans/
+Find the live demo of the site [here](https://fedron.github.io/hot-beans/).
 
-A web developemnent project part of an assignement for my course.
-
-Everything on the website is fake and purely there for content, includes stuff like the jobs and applications.
+A web development company's website, made as a part of a college assignment.
+*(Any job applications on the site are there purely for content and are not real)*
